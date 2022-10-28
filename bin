@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+ORIGIN=$1
+
+# reate empty git repo
+git init
+git remote add origin $ORIGIN
+
+# enable partial clone and sparse checkout
+git sparse-checkout init --cone
+git config remote.origin.promisor true
+git config remote.origin.partialCloneFilter blob:none
+
+echo 'start fetching...'
+git fetch origin master
+git checkout --track origin/master
+git maintenance start

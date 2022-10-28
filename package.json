@@ -1,0 +1,20 @@
+{
+  "name": "git-shallow-clone",
+  "version": "1.0.0",
+  "description": "A fast way to clone monorepo shallowly",
+  "bin": "./bin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edvardchen/git-shallow-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edvardchen/git-shallow-clone/issues"
+  },
+  "homepage": "https://github.com/edvardchen/git-shallow-clone#readme"
+}
