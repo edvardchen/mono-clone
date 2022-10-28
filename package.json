@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/edvardchen/git-shallow-clone.git"
   },
-  "keywords": [],
+  "keywords": [
+    "git",
+    "monorepo"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
