@@ -1,5 +1,5 @@
 {
-  "name": "git-shallow-clone",
+  "name": "mono-clone",
   "version": "1.0.0",
   "description": "A fast way to clone monorepo shallowly",
   "bin": "./bin",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edvardchen/git-shallow-clone.git"
+    "url": "git+https://github.com/edvardchen/mono-clone.git"
   },
   "keywords": [
     "git",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edvardchen/git-shallow-clone/issues"
+    "url": "https://github.com/edvardchen/mono-clone/issues"
   },
-  "homepage": "https://github.com/edvardchen/git-shallow-clone#readme"
+  "homepage": "https://github.com/edvardchen/mono-clone#readme"
 }

@@ -1,4 +1,4 @@
-# git-shallow-clone
+# mono-clone
 
 A fast way to clone monorepo shallowly
 
@@ -7,7 +7,7 @@ A fast way to clone monorepo shallowly
 ## Usage
 
 ```bash
-npx git-shallow-clone YOUR_REPO_URL
+npx mono-clone YOUR_REPO_URL
 ```
 
 What does it do?
