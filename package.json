@@ -4,6 +4,7 @@
   "description": "A fast way to clone monorepo shallowly",
   "bin": "./bin",
   "scripts": {
+    "release": "npx standard-version && npm publish && git push --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
