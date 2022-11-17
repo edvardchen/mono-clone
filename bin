@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
-ORIGIN=$1
+origin=$1
+_basename=$(basename $origin)
+folder=${_basename%.*}
+echo "$folder"
+
+if [ -d "$folder" ]; then
+	echo "$folder exists"
+	exit 1
+fi
+
+mkdir "$folder"
+cd "$folder" || exit 2
 
 # reate empty git repo
 git init
-git remote add origin $ORIGIN
+git remote add origin "$origin"
 
 # enable partial clone and sparse checkout
 git sparse-checkout init --cone
