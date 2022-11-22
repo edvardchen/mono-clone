@@ -22,7 +22,11 @@ git sparse-checkout init --cone
 git config remote.origin.promisor true
 git config remote.origin.partialCloneFilter blob:none
 
+branch=master
+if [ -z "$(git ls-remote --heads origin master)" ]; then
+	branch=main
+fi
+
 echo 'start fetching...'
-git fetch origin master
-git checkout --track origin/master
-git maintenance start
+git fetch origin $branch
+git checkout --track origin/$branch
