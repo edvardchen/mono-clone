@@ -30,3 +30,4 @@ fi
 echo 'start fetching...'
 git fetch origin $branch
 git checkout --track origin/$branch
+git maintenance start
