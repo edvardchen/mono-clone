@@ -28,6 +28,6 @@ if [ -z "$(git ls-remote --heads origin master)" ]; then
 fi
 
 echo 'start fetching...'
-git fetch origin $branch
+git fetch --depth 1 origin $branch
 git checkout --track origin/$branch
 git maintenance start
